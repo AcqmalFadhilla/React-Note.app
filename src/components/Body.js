@@ -11,7 +11,7 @@ const Body = ({ onDelete, onArsip, searchedNotes , searchedTitle}) => {
         archivedNotes = searchedNotes.filter((datas) => datas.archived === true);
     }else {
         activeNotes = data.filter((datas) => datas.archived === false);
-        archivedNotes = data.filter((datas) => datas.archived === true)
+        archivedNotes = data.filter((datas) => datas.archived === true);
     }
 
 
