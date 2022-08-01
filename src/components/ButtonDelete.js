@@ -8,4 +8,4 @@ const ButtonDelete = ({id,onDelete}) => {
   )
 }
 
-export default ButtonDelete
+export default ButtonDelete 
