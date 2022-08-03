@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ButtonArsip = ({id,onArsip}) => {
+const ButtonArsip = ({id,onArsip,archived}) => {
   return (
     <>
-    <button onClick={() => onArsip(id)}>Arsip</button>
+    <button className='style-button' onClick={() => onArsip(id)}>{ archived === false ? "archived" : "aktif"}</button>
     </>
   )
 }

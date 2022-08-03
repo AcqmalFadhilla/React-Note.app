@@ -17,8 +17,7 @@ export class App extends Component {
     this.onSearchHandler = this.onSearchHandler.bind(this);
     this.onSearchChangeHandler = this.onSearchChangeHandler.bind(this);
     this.onDeleteHandler = this.onDeleteHandler.bind(this);
-    this.onArsipHandler = this.onArsipHandler.bind(this);
-
+    this.onArsipHandler = this.onArsipHandler.bind(this)
   }
 
   onAddHandler({title, body}) {
@@ -62,7 +61,7 @@ export class App extends Component {
   }
 
   onDeleteHandler(id) {
-        const data = this.state.data.filter(datas => datas.id != id);
+        const data = this.state.data.filter(datas => datas.id !== id);
         this.setState({data});
         console.log(data)
       }
@@ -78,12 +77,15 @@ export class App extends Component {
 
   render() {
   
-    
     return (
       <>
       <AddData addData={this.onAddHandler}/>
       <SearchItems searchTitle={this.state.searchTitle} onSearch={this.onSearchChangeHandler} />
-      <Body searchedNotes={this.state.searchedNotes} searchedTitle={this.state.searchTitle} onDelete={this.onDeleteHandler} onArsip={this.onArsipHandler}/>
+      <Body data={this.state.data}
+       onDelete={this.onDeleteHandler} 
+       onArsip={this.onArsipHandler}
+       searchedNotes={this.state.searchedNotes} 
+       searchedTitle={this.state.searchTitle}/>
       </>
     )
   }

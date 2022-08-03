@@ -46,16 +46,19 @@ export class AddData extends Component {
     }
   render() {
     return (
-      <>
-        <form action="" onSubmit={this.onSubmitHandler}>
-            <label htmlFor="Title">Title</label>
-            <input type="text" name="Title" placeholder='Title' value={this.state.title} onChange={this.onTitleHandler}/>
-            <p>Sisah Character {this.state.titleChar}</p>
-            <label htmlFor="Body">Body</label>
-            <input type="text" name="Body" placeholder='Body'  value={this.state.body} onChange={this.onBodyHandler}/>
-            <button type="submit">Add</button>
+      <div className='style-addData'>
+        <div className='style-card__addData'>
+        <h1 className='style-header'>NOTE</h1>
+        <form action="" onSubmit={this.onSubmitHandler} className="style-form">
+            <label className='style-text__sisah_char'>Sisah Character {this.state.titleChar}</label>
+            <input className='style-input' type="text" name="Title" placeholder='Title' value={this.state.title} onChange={this.onTitleHandler} required/>
+            <br />
+            <textarea rows={10} cols={5} className='style-input__textarea' type="text" name="Body" placeholder='Body'  value={this.state.body} onChange={this.onBodyHandler} required/>
+            <br />
+            <button className='style-button__submit' type="submit">Add</button>
         </form>
-      </>
+        </div>
+      </div>
     )
   }
 }
