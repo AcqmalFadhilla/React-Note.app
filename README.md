@@ -1,3 +1,14 @@
+#Tugas Akhir Dicoding React Dasar
+
+Project ini di peruntukan untuk menyelesaikkan submission dicoding react dasar.\
+Adapun fitur di yang ada:
+- Search title
+- Tambahkan note
+- Limit title
+- Hapus
+- Archived
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
