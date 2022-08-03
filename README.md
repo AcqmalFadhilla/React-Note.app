@@ -1,4 +1,4 @@
-#Tugas Akhir Dicoding React Dasar
+# Tugas Akhir Dicoding React Dasar
 
 Project ini di peruntukan untuk menyelesaikkan submission dicoding react dasar.\
 Adapun fitur di yang ada:
